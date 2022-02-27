@@ -73,3 +73,47 @@ flutter:
         - asset: lib/fonts/Ubuntu-BoldItalic.ttf
           weight: 700
           style: italic
+    - family: Mali
+      fonts:
+        - asset: lib/fonts/Mali-ExtraLight.ttf
+          weight: 200
+        - asset: lib/fonts/Mali-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: lib/fonts/Mali-Light.ttf
+          weight: 300
+        - asset: lib/fonts/Mali-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: lib/fonts/Mali-Regular.ttf
+          weight: 400
+        - asset: lib/fonts/Mali-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: lib/fonts/Mali-Medium.ttf
+          weight: 500
+        - asset: lib/fonts/Mali-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: lib/fonts/Mali-SemiBold.ttf
+          weight: 600
+        - asset: lib/fonts/Mali-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: lib/fonts/Mali-Bold.ttf
+          weight: 700
+        - asset: lib/fonts/Mali-BoldItalic.ttf
+          weight: 700
+          style: italic
+    - family: Comfortaa
+      fonts:
+       - asset: lib/fonts/Comfortaa-Light.ttf
+         weight: 300
+       - asset: lib/fonts/Comfortaa-Regular.ttf
+         weight: 400
+       - asset: lib/fonts/Comfortaa-Medium.ttf
+         weight: 500
+       - asset: lib/fonts/Comfortaa-SemiBold.ttf
+         weight: 600
+       - asset: lib/fonts/Comfortaa-Bold.ttf
+         weight: 700

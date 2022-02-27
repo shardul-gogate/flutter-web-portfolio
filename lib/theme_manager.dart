@@ -11,7 +11,7 @@ class ThemeManager {
     const Color(0xff0288d1),
     const Color(0xff039be5),
     const Color(0xff03a9f4),
-    const Color(0xff81d4fa)
+    const Color(0xffa9d1ff)
   ];
   static final List<Color> _red = [
     const Color(0xffb71c1c),

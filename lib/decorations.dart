@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:web_portfolio/theme_manager.dart';
 
 class Decorations {
-  static BoxDecoration roundedContainerShadow() => BoxDecoration(
+  static BoxDecoration blueAccentShadow() => BoxDecoration(
     boxShadow: const [
       BoxShadow(
           blurRadius: 18,
@@ -10,11 +10,11 @@ class Decorations {
       )
     ],
     color: ThemeManager.accentBlue,
-    borderRadius: BorderRadius.circular(12)
+    borderRadius: BorderRadius.circular(100)
   );
 
-  static BoxDecoration accentContainer() => BoxDecoration(
+  static BoxDecoration blueAccent() => BoxDecoration(
     color: ThemeManager.accentBlue,
-    borderRadius: BorderRadius.circular(12)
+    borderRadius: BorderRadius.circular(200)
   );
 }

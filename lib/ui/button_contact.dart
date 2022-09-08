@@ -14,7 +14,7 @@ class ContactButton extends StatefulWidget {
 
 class _ContactButtonState extends State<ContactButton> {
 
-  BoxDecoration _boxDecoration = Decorations.blueAccent();
+  BoxDecoration _boxDecoration = Decorations.orangeAccent();
 
   @override
   Widget build(BuildContext context) {
@@ -45,14 +45,14 @@ class _ContactButtonState extends State<ContactButton> {
   void _onPointerEnter() {
     setState(() {
       if(!mounted) return;
-      _boxDecoration = Decorations.blueAccentShadow();
+      _boxDecoration = Decorations.orangeAccentShadow();
     });
   }
 
   void _onPointerExit() {
     setState(() {
       if(!mounted) return;
-      _boxDecoration = Decorations.blueAccent();
+      _boxDecoration = Decorations.orangeAccent();
     });
   }
 }

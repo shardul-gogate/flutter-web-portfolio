@@ -15,14 +15,14 @@ class TextStyles {
 
   static TextStyle getRoleIntro() => TextStyle(
     color: ThemeManager.primaryText,
-    fontSize: 26,
+    fontSize: 24,
   );
 
   static TextStyle getTitleRoleStyle() => TextStyle(
     color: ThemeManager.primaryText,
     fontSize: 26,
     fontWeight: FontWeight.w600,
-    fontStyle: FontStyle.italic
+    // fontStyle: FontStyle.italic
   );
 
   static TextStyle getTimelineElementTitle() => TextStyle(
@@ -34,7 +34,7 @@ class TextStyles {
   static TextStyle getTimelineElementLocation() => TextStyle(
     color: ThemeManager.primaryText,
     fontSize: 20,
-    fontStyle: FontStyle.italic
+    // fontStyle: FontStyle.italic
   );
 
   static TextStyle getTimelineElementDescription() => TextStyle(

@@ -5,7 +5,6 @@ import 'package:web_portfolio/theme_manager.dart';
 import 'package:web_portfolio/ui/fragment_contact.dart';
 import 'package:web_portfolio/ui/fragment_intro.dart';
 import 'package:web_portfolio/ui/gap.dart';
-import 'package:web_portfolio/ui/fragment_timeline.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -17,25 +16,44 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
+    bool isMobile = MediaQuery.of(context).size.height > MediaQuery.of(context).size.width;
     return Scaffold(
       body: Builder(
         builder: (builderContext) => Container(
           color: ThemeManager.primaryBackground,
-          child: ListView(
-            shrinkWrap: true,
-            children: const [
-              Align(
-                alignment: Alignment.centerRight,
-                child: ThemeSwitchButton()
-              ),
-              IntroFragment(),
-              Gap(vertical: 50),
-              ContactFragment(),
-              Gap(vertical: 40),
-              TimelineFragment(),
-              Gap(vertical: 40)
-            ]
-          ),
+          child: Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("lib/images/background.jpg"),
+                fit: BoxFit.cover
+              )
+            ),
+            child: Container(
+              color: const Color(0xcc000000),
+              child: ListView(
+                shrinkWrap: true,
+                children: [
+                  const Gap(vertical: 70),
+                  isMobile
+                  ?
+                  Column(
+                    children: const [
+                      IntroFragment(),
+                      ContactFragment()
+                    ]
+                  )
+                  :
+                  Row(
+                    children: const [
+                      Expanded(child: IntroFragment()),
+                      Expanded(child: ContactFragment())
+                    ]
+                  ),
+                  const Gap(vertical: 70)
+                ]
+              )
+            )
+          )
         )
       )
     );

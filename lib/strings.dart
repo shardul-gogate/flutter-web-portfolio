@@ -1,19 +1,22 @@
 class ApplicationStrings {
   static const String shardulGogate = "Shardul Gogate";
   static const String emptyString = "";
+  static const String connectMe = "You can connect with me on";
+  static const String resume = "or find my resume here";
   static const List<String> emptyStringList = [
     "","",""
   ];
   static const String portfolioTitle = "Shardul Gogate's Portfolio";
-  static const String titleGreet = "Hi there, it's me,";
+  static const String titleGreet = "Hi! I'm";
   static const String roleIntro = "and I am a ";
   static const List<String> roles = [
     "Software Engineer",
-    "User Experience Designer",
     "Android Developer",
     "iOS Developer",
     "Flutter Developer",
-    "React Native Developer"
+    "React Native Developer",
+    "ReactJS Developer",
+    "User Experience Designer",
   ];
   static const List<String> workSpringCT = [
     "Software Engineer",
@@ -31,7 +34,6 @@ class ApplicationStrings {
     "Bachelor of Science (Computer Science)",
     "Savitribai Phule Pune University, Pune, India",
     """
-Acquired broad knowledge of \u2022
 Programming in C \u2022
 Object Oriented Programming in Java \u2022
 Database Management \u2022
@@ -51,7 +53,7 @@ Principles of Programming \u2022
 Design and Analysis of Algorithms \u2022
 Mobile Application Development \u2022
 Software Architecture and Design Patterns \u2022
-Artificial Intelligence, and Machine Learning \u2022
+Artificial Intelligence and Machine Learning \u2022
 Web Frameworks and Web Programming Technologies \u2022
 Software Project Management \u2022
 """

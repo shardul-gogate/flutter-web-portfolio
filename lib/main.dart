@@ -9,20 +9,18 @@ void main() {
 
 class MyApp extends StatelessWidget {
   MyApp({Key? key}) : super(key: key) {
-    DateTime dateTime = DateTime.now();
-    if(dateTime.hour < 19 && dateTime.hour > 6) {
-      ThemeManager.setLightMode();
-    } else {
-      ThemeManager.setDarkMode();
-    }
+    ThemeManager.setDarkMode();
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: ApplicationStrings.portfolioTitle,
-      home: const MainPage(),
-      theme: ThemeData(fontFamily: 'Mali')
+      initialRoute: "/",
+      theme: ThemeData(fontFamily: 'Comfortaa'),
+      routes: {
+        '/': (context) => const MainPage(),
+      }
     );
   }
 }
